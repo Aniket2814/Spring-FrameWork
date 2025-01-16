@@ -7,11 +7,16 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
+
+<bean class="com.springcore.ci.Certi" name="cer">
+<constructor-arg value="Java Project"/>
+</bean>
         <bean class="com.springcore.ci.Person" name="person">
 
 
 <constructor-arg value="10"/>
 <constructor-arg value="Aniket"/>
+<constructor-arg ref="cer" />
 </bean>
         
         </beans>

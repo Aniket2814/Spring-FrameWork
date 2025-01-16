@@ -4,17 +4,18 @@ public class Person {
 
 	private int PersonId;
 	private String name;
-	
-	Person (int PersonId,String name)
+	private Certi certi;
+	Person (int PersonId,String name,Certi certi)
 	{
 		this.PersonId=PersonId;
 		this.name=name;
+		this.certi=certi;
 	}
      @Override
 	public String toString()
 	{
 		
-	return this.name+ " : " +this.PersonId;
-		
+	return this.name+ " : " +this.PersonId+ " :  " +this.certi.name;
+		 
 	}
 }
