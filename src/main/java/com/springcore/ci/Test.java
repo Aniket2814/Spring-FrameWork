@@ -12,5 +12,7 @@ public static void main(String ar[])
     Person temp=(Person)context.getBean("person");
 System.out.println(temp);
 
+Addition a=(Addition)context.getBean("add");
+a.doSum();
 }
 }
