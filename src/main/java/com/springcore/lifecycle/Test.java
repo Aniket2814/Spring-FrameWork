@@ -9,9 +9,11 @@ public class Test {
 //                 LifeCycle li=(LifeCycle) context.getBean("demo");
 //	  context.registerShutdownHook();
 //                 System.out.println(li);
-	   Pepsi p=(Pepsi) context.getBean("demo1");
-
-System.out.println(p);
+//	   Pepsi p=(Pepsi) context.getBean("demo1");
+//
+//System.out.println(p);
+		Annotation a=(Annotation)context.getBean("demo2");
+		System.out.println(a);
 context.registerShutdownHook();
 
 	}

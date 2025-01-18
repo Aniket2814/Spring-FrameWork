@@ -7,9 +7,9 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
-        
        
-         <bean class="com.springcore.lifecycle.Pepsi" name="demo1" >
-        <property name="price" value="20"/>
+       <context:annotation-config/>
+         <bean class="com.springcore.lifecycle.Annotation" name="demo2" >
+        <property name="subject" value="Spring"/>
         </bean>
         </beans>
