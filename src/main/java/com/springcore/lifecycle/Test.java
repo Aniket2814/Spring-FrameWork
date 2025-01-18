@@ -6,9 +6,14 @@ public class Test {
 
 	public static void main(String[] args) {
 		AbstractApplicationContext context=new ClassPathXmlApplicationContext("com/springcore/lifecycle/config.xml");
-                 LifeCycle li=(LifeCycle) context.getBean("demo");
-	  context.registerShutdownHook();
-                 System.out.println(li);
+//                 LifeCycle li=(LifeCycle) context.getBean("demo");
+//	  context.registerShutdownHook();
+//                 System.out.println(li);
+	   Pepsi p=(Pepsi) context.getBean("demo1");
+
+System.out.println(p);
+context.registerShutdownHook();
+
 	}
 
 }
