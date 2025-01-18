@@ -1,6 +1,8 @@
 package com.springcore.auto.wire;
 
 public class Emp {
+
+
 private Address address;
 
 @Override
@@ -18,6 +20,7 @@ public void setAddress(Address address) {
 
 public Emp(Address address) {
 	super();
+	System.out.println("constructor");
 	this.address = address;
 }
 
