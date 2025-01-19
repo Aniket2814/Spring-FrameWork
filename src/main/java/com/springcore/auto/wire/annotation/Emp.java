@@ -1,6 +1,7 @@
 package com.springcore.auto.wire.annotation;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Emp {
 
@@ -17,6 +18,7 @@ public Address getAddress() {
 	return address;
 }
 @Autowired
+@Qualifier("addres1")
 public void setAddress(Address address) {
 	System.out.println("setter");
 	this.address = address;

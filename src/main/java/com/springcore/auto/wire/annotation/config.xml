@@ -8,9 +8,13 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
        <context:annotation-config/>
-       <bean class="com.springcore.auto.wire.annotation.Address"  name="address">
+       <bean class="com.springcore.auto.wire.annotation.Address"  name="address2">
        <property name="street" value="Vijay Nagar"/>
        <property name="city" value="Indore"/>
+       </bean>
+              <bean class="com.springcore.auto.wire.annotation.Address"  name="addres1">
+       <property name="street" value="Meerkala"/>
+       <property name="city" value="Shajapur"/>
        </bean>
        
        <bean class="com.springcore.auto.wire.annotation.Emp" name="em"  />
