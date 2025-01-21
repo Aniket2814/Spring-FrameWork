@@ -10,7 +10,7 @@ public class Test {
 	  Person p=con.getBean("friend",Person.class);
 	System.out.println(p);
 	System.out.println(p.getFriends().getClass().getName());  
-	System.out.println(p.getProperty());
+	System.out.println(p.getProperty() );
 	}
 
 }

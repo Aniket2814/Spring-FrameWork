@@ -14,7 +14,15 @@ public class Student {
 
   @Value("#{temp}")
    private List<String> address;
-  public String getStudentName() {
+  @Value("${non.existent.property:20000.0}")
+  private double salary;
+  public double getSalary() {
+	return salary;
+}
+public void setSalary(double salary) {
+	this.salary = salary;
+}
+public String getStudentName() {
 		return studentName;
 	}
 	public void setStudentName(String studentName) {

@@ -10,6 +10,7 @@ public class Test {
         Student s=con.getBean("student",Student.class);
 	System.out.println(s);
 	System.out.println(s.getAddress().getClass().getName());
+	System.out.println(s.getSalary());
 	}
 
 }
