@@ -9,6 +9,7 @@ public class Test {
 	ApplicationContext con=	new ClassPathXmlApplicationContext("com/springcore/stereotype/annotationconfig.xml");
         Student s=con.getBean("student",Student.class);
 	System.out.println(s);
+	System.out.println(s.getAddress().getClass().getName());
 	}
 
 }
