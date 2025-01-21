@@ -19,4 +19,6 @@
         <value>Ujjain</value>
         <value>Shajapur</value>
         </util:list>
+        
+        <bean class ="com.springcore.stereotype.Teacher" name="t1" scope="prototype" />
         </beans>
