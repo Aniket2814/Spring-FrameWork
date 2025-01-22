@@ -13,9 +13,7 @@ ApplicationContext con=	new ClassPathXmlApplicationContext("com/springcore/spel/
              Demo d=  con.getBean("demo",Demo.class);
              System.out.println(d);
              
-           SpelExpressionParser temp=  new SpelExpressionParser();
-      Expression exp=temp.parseExpression("22+12");
-      System.out.println(exp.getValue());
+           
 	}
 
 }

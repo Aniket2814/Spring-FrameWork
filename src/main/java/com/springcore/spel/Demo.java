@@ -15,9 +15,36 @@ private int x;
 
 @Value("#{8>9?12:13}")
 private int y;
+@Value("#{T(java.lang.Math).sqrt(169)}")
+private int z;
+
+@Value("#{T(java.lang.Math).PI}")
+private double pi;
+
+@Value("#{new java.lang.String('Aniket Rathore')}")
+private String name;
+public int getZ() {
+	return z;
+}
+public void setZ(int z) {
+	this.z = z;
+}
+public double getPi() {
+	return pi;
+}
+public void setPi(double pi) {
+	this.pi = pi;
+}
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+
 @Override
 public String toString() {
-	return "Demo [x=" + x + ", y=" + y + "]";
+	return "Demo [x=" + x + ", y=" + y + ", z=" + z + ", pi=" + pi + ", name=" + name + "]";
 }
 public int getX() {
 	return x;
