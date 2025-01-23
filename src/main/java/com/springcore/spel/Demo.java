@@ -23,6 +23,17 @@ private double pi;
 
 @Value("#{new java.lang.String('Aniket Rathore')}")
 private String name;
+
+
+
+public boolean isActive() {
+	return isActive;
+}
+public void setActive(boolean isActive) {
+	this.isActive = isActive;
+}
+@Value("#{true}")
+private boolean isActive;
 public int getZ() {
 	return z;
 }
@@ -42,9 +53,10 @@ public void setName(String name) {
 	this.name = name;
 }
 
+
 @Override
 public String toString() {
-	return "Demo [x=" + x + ", y=" + y + ", z=" + z + ", pi=" + pi + ", name=" + name + "]";
+	return "Demo [x=" + x + ", y=" + y + ", z=" + z + ", pi=" + pi + ", name=" + name + ", isActive=" + isActive + "]";
 }
 public int getX() {
 	return x;
