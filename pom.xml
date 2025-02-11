@@ -2,12 +2,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.springcore</groupId>
-  <artifactId>springcore</artifactId>
+  <groupId>com.spring.jdbc</groupId>
+  <artifactId>Springjdbc</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>springcore</name>
+  <name>Springjdbc</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -15,22 +15,35 @@
   </properties>
 
   <dependencies>
+    <!-- Spring Core -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-core</artifactId>
+      <version>5.3.22</version>
+    </dependency>
 
-<!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
-<dependency>
-    <groupId>org.springframework</groupId>
-    <artifactId>spring-core</artifactId>
-    <version>5.3.22</version>
+    <!-- Spring Context -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>5.3.22</version>
+    </dependency>
+
+    <!-- Spring JDBC -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-jdbc</artifactId>
+      <version>5.3.22</version>
+    </dependency>
+
+    <!-- MySQL Connector -->
+    <dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.33</version>
 </dependency>
 
-<!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
-<dependency>
-    <groupId>org.springframework</groupId>
-    <artifactId>spring-context</artifactId>
-    <version>5.3.22</version> <!-- Replace with the version you are using -->
-</dependency>
-
-
+    <!-- JUnit for Testing -->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
