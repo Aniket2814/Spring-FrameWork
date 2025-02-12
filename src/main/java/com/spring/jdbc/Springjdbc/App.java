@@ -14,12 +14,17 @@ public class App
          System.out.println( "Program Started" );
 ApplicationContext context=new ClassPathXmlApplicationContext("com/spring/jdbc/Springjdbc/config.xml");
                 StudentDao sd= context.getBean("std" ,StudentDao.class);            
-                Student s=new Student();
-                s.setId(102);
-                s.setName("Abc1");
-                s.setCity("Shajapur111");
-                int result=sd.change(s);
+//                Student s=new Student();
+//                s.setId(102);
+//                s.setName("Abc1");
+//                s.setCity("Shajapur111");
+//                int result=sd.change(s);
                 
-    System.out.println("No.of Data Changed ...." +result);
+                
+//    System.out.println("No.of Data Changed ...." +result);
+                           int r= sd.delete(102);
+                            System.out.println("No. of rows Deleted :" +r);
+    
     }
+    
 }

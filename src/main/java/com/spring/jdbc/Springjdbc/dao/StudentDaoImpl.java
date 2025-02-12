@@ -31,5 +31,11 @@ public int insert(Student student) {
 	
 	return result;
 }
-	
+	public int delete(int studentID)
+	{
+		String query="delete from student where id=?";
+		int r=this.jdbctemplate.update(query,studentID);
+		
+		return r;
+	}
 }
