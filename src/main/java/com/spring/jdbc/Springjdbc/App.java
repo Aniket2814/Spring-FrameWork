@@ -16,10 +16,10 @@ ApplicationContext context=new ClassPathXmlApplicationContext("com/spring/jdbc/S
                 StudentDao sd= context.getBean("std" ,StudentDao.class);            
                 Student s=new Student();
                 s.setId(102);
-                s.setName("Abc");
-                s.setCity("Shajapur");
-                int result=sd.insert(s);
+                s.setName("Abc1");
+                s.setCity("Shajapur111");
+                int result=sd.change(s);
                 
-    System.out.println("No.of Rows Affected ...." +result);
+    System.out.println("No.of Data Changed ...." +result);
     }
 }
