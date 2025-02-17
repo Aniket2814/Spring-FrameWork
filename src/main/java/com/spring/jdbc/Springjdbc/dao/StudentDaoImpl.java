@@ -1,6 +1,7 @@
 package com.spring.jdbc.Springjdbc.dao;
 
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
 
 import com.spring.jdbc.Springjdbc.entities.Student;
 
@@ -37,5 +38,17 @@ public int insert(Student student) {
 		int r=this.jdbctemplate.update(query,studentID);
 		
 		return r;
+	}
+
+
+	@Override
+	public Student getStudent(int studentID) {
+		
+		//select Single Student data
+		String query="select * from student where id=?";
+	RowMapper<Student> rowMapper=new  RowMapperImp();
+	
+		Student st=this.jdbctemplate.queryForObject(query,rowMapper, studentID);
+		return st;
 	}
 }

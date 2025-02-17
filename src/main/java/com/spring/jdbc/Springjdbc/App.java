@@ -22,9 +22,10 @@ ApplicationContext context=new ClassPathXmlApplicationContext("com/spring/jdbc/S
                 
                 
 //    System.out.println("No.of Data Changed ...." +result);
-                           int r= sd.delete(102);
-                            System.out.println("No. of rows Deleted :" +r);
-    
+//                           int r= sd.delete(102);
+//                            System.out.println("No. of rows Deleted :" +r);
+    Student st=sd.getStudent(101);
+    System.out.println(st);
     }
     
 }
