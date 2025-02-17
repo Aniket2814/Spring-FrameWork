@@ -1,5 +1,7 @@
 package com.spring.jdbc.Springjdbc.dao;
 
+import java.util.List;
+
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 
@@ -49,6 +51,14 @@ public int insert(Student student) {
 	RowMapper<Student> rowMapper=new  RowMapperImp();
 	
 		Student st=this.jdbctemplate.queryForObject(query,rowMapper, studentID);
+		return st;
+	}
+
+
+	@Override
+	public List<Student> getAllStudent() {
+	String query1="select * from student";
+	List<Student> st= this.jdbctemplate.query(query1,new RowMapperImp());
 		return st;
 	}
 }

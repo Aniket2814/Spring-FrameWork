@@ -1,5 +1,7 @@
 package com.spring.jdbc.Springjdbc;
 
+import java.util.List;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -24,8 +26,10 @@ ApplicationContext context=new ClassPathXmlApplicationContext("com/spring/jdbc/S
 //    System.out.println("No.of Data Changed ...." +result);
 //                           int r= sd.delete(102);
 //                            System.out.println("No. of rows Deleted :" +r);
-    Student st=sd.getStudent(101);
-    System.out.println(st);
+//    Student st=sd.getStudent(101);
+              List<Student> s= sd.getAllStudent();
+    for(Student s1:s)
+              System.out.println(s1);
     }
     
 }
